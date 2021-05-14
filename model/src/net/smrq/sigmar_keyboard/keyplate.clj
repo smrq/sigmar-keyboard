@@ -48,7 +48,7 @@
         c-vat (rgb 147 194 71)
         c-wan (rgb 232 231 227)]
     (translate-u [0.5 0]
-      (translate-u [0 0] (position-column [1.75 1 1] [c-rcj c-wan c-wan] key))
+      (translate-u [0 1] (position-column [1 1 1] [c-rcj c-wan c-wan] key))
       (translate-u [1 0] (position-column [1 1 1 1] [c-rcj c-wan c-wan c-wan] key))
       (translate-u [2 0.25] (position-column [1 1 1 1] [c-rcj c-wan c-wan c-wan] key))
       (translate-u [3 0.5] (position-column [1 1 1 1] [c-rcj c-wan c-wan c-wan] key))
@@ -59,10 +59,11 @@
 
 (def key-preview (position-keys keycap-area))
 
-(def keyplate
-  (difference
-    (union (hull (position-keys key-area))
-           (square (* key-spacing 2) (* key-spacing 2) :center false))
-    (position-keys keyswitch-hole)))
+(def keyplate-base (minkowski (position-keys key-area) (circle 5)))
+
+(def keyplate-holes (position-keys keyswitch-hole))
+
+(def keyplate (difference keyplate-base keyplate-holes))
+    
 (spit "scad/keyplate.scad" (scad/write-scad keyplate))
 (spit "scad/keyplate-preview.scad" (scad/write-scad key-preview))
