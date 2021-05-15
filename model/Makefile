@@ -9,7 +9,7 @@ else
 	RMRF = rm -rf $1
 endif
 
-DOCKER_IMG := sigmar
+DOCKER_IMG := sigmar-model
 ifneq ($(SKIP_DOCKER), true)
 	RUN := docker run --rm -e SKIP_DOCKER=true -v $(CWD):/root/workspace $(DOCKER_IMG)
 endif
