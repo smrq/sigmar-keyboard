@@ -16,7 +16,7 @@ KC_LSFT,  KC_Z,     KC_X,     KC_C,     KC_V,     KC_B,     KC_TAB,   KC_ENT,   
           KC_LCTL,  KC_LALT,  KC_LGUI,  MO(_LOW), KC_SPC,                       KC_SPC,   MO(_RAI), KC_RGUI,  KC_RALT,  KC_RCTL
     ),
     [_LOW] = LAYOUT(
-_______,  KC_SLSH,  KC_7,     KC_8,     KC_9,     KC_ASTR,                      _______,  KC_AMPR,  KC_PIPE,  KC_TILD,  KC_EXLM,  _______,
+_______,  KC_SLSH,  KC_7,     KC_8,     KC_9,     KC_ASTR,                      KC_CIRC,  KC_AMPR,  KC_PIPE,  KC_TILD,  KC_EXLM,  _______,
 _______,  KC_0,     KC_4,     KC_5,     KC_6,     KC_EQL,                       KC_LABK,  KC_LPRN,  KC_LCBR,  KC_LBRC,  _______,  KC_GRV,
 _______,  KC_MINS,  KC_1,     KC_2,     KC_3,     KC_PLUS,  _______,  _______,  KC_RABK,  KC_RPRN,  KC_RCBR,  KC_RBRC,  KC_BSLS,  _______,
           _______,  _______,  _______,  _______,  KC_BSPC,                      KC_BSPC,  _______,  _______,  _______,  _______

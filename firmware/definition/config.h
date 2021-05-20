@@ -136,3 +136,7 @@
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
 //#define BOOTMAGIC_LITE_COLUMN 0
+
+
+// https://beta.docs.qmk.fm/using-qmk/software-features/tap_hold#tapping-force-hold
+#define TAPPING_FORCE_HOLD
