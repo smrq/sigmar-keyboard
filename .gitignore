@@ -1,1 +1,4 @@
 *.sublime-workspace
+*.kicad_pcb-bak
+*.sch-bak
+_autosave-*.sch
