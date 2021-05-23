@@ -1900,4 +1900,6 @@ Wire Wire Line
 Wire Wire Line
 	11100 5950 11100 5850
 Connection ~ 11050 5950
+NoConn ~ 10100 5600
+NoConn ~ 10100 5700
 $EndSCHEMATC
