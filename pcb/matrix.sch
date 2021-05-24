@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -268,7 +268,7 @@ AR Path="/619AF0E6" Ref="SW?"  Part="1"
 AR Path="/6195C5A7/619AF0E6" Ref="SW13"  Part="1" 
 F 0 "SW13" H 10475 3175 50  0000 C CNN
 F 1 "Cherry-MX-LED-APA102" H 10475 3084 50  0000 C CNN
-F 2 "Local:SW_Cherry_MX_RGB_R2L" H 10450 2300 50  0001 L TNN
+F 2 "Local:SW_Cherry_MX_RGB_R2L_2U" H 10450 2300 50  0001 L TNN
 F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 10500 2175 50  0001 L TNN
 	1    10400 2550
 	1    0    0    1   
@@ -405,7 +405,7 @@ AR Path="/619AF12C" Ref="SW?"  Part="1"
 AR Path="/6195C5A7/619AF12C" Ref="SW7"  Part="1" 
 F 0 "SW7" H 1475 3175 50  0000 C CNN
 F 1 "Cherry-MX-LED-APA102" H 1475 3084 50  0000 C CNN
-F 2 "Local:SW_Cherry_MX_RGB_R2L" H 1450 2300 50  0001 L TNN
+F 2 "Local:SW_Cherry_MX_RGB_L2R" H 1450 2300 50  0001 L TNN
 F 3 "http://www.led-color.com/upload/201604/APA102-2020%20SMD%20LED.pdf" H 1500 2175 50  0001 L TNN
 	1    1400 2550
 	1    0    0    1   
