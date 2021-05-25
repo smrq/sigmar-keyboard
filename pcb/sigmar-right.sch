@@ -1,0 +1,324 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 1 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Sheet
+S 6600 3900 550  1600
+U 6195C5A7
+F0 "matrix" 50
+F1 "matrix.sch" 50
+F2 "COL1" I L 6600 4000 50 
+F3 "COL2" I L 6600 4100 50 
+F4 "COL3" I L 6600 4200 50 
+F5 "COL4" I L 6600 4300 50 
+F6 "COL5" I L 6600 4400 50 
+F7 "COL6" I L 6600 4500 50 
+F8 "COL7" I L 6600 4600 50 
+F9 "ROW1" I L 6600 4800 50 
+F10 "ROW2" I L 6600 4900 50 
+F11 "ROW3" I L 6600 5000 50 
+F12 "ROW4" I L 6600 5100 50 
+F13 "LED_CKI" I L 6600 5300 50 
+F14 "LED_SDI" I L 6600 5400 50 
+$EndSheet
+Wire Wire Line
+	6600 4000 6200 4000
+Wire Wire Line
+	6200 4100 6600 4100
+Wire Wire Line
+	6200 4200 6600 4200
+Wire Wire Line
+	6200 4300 6600 4300
+Wire Wire Line
+	6200 4400 6600 4400
+Wire Wire Line
+	6200 4500 6600 4500
+Wire Wire Line
+	6200 4600 6600 4600
+Wire Wire Line
+	6200 4800 6600 4800
+Wire Wire Line
+	6200 4900 6600 4900
+Wire Wire Line
+	6200 5000 6600 5000
+Wire Wire Line
+	6200 5100 6600 5100
+Wire Wire Line
+	6200 5300 6600 5300
+Wire Wire Line
+	6200 5400 6600 5400
+Text Label 6200 4000 0    50   ~ 0
+COL1
+Text Label 6200 4100 0    50   ~ 0
+COL2
+Text Label 6200 4200 0    50   ~ 0
+COL3
+Text Label 6200 4300 0    50   ~ 0
+COL4
+Text Label 6200 4400 0    50   ~ 0
+COL5
+Text Label 6200 4500 0    50   ~ 0
+COL6
+Text Label 6200 4600 0    50   ~ 0
+COL7
+Text Label 6200 4800 0    50   ~ 0
+ROW1
+Text Label 6200 4900 0    50   ~ 0
+ROW2
+Text Label 6200 5000 0    50   ~ 0
+ROW3
+Text Label 6200 5100 0    50   ~ 0
+ROW4
+Text Label 6200 5300 0    50   ~ 0
+LED_CKI
+Text Label 6200 5400 0    50   ~ 0
+LED_SDI
+$Sheet
+S 6600 1650 550  1500
+U 60B5DDD3
+F0 "components" 50
+F1 "components.sch" 50
+F2 "MOSI" I L 6600 1850 50 
+F3 "MISO" I L 6600 1950 50 
+F4 "SCK" I L 6600 1750 50 
+F5 "RESET" I L 6600 2150 50 
+F6 "SCL" I L 6600 2350 50 
+F7 "SDA" I L 6600 2450 50 
+F8 "XTAL1" I L 6600 2650 50 
+F9 "XTAL2" I L 6600 2750 50 
+F10 "D+" I L 6600 2950 50 
+F11 "D-" I L 6600 3050 50 
+$EndSheet
+$Comp
+L MCU_Microchip_ATmega:ATmega32U4-AU U1
+U 1 1 60DD1B64
+P 4000 3500
+F 0 "U1" H 4000 1611 50  0000 C CNN
+F 1 "ATmega32U4-AU" H 4000 1520 50  0000 C CNN
+F 2 "Package_QFP:TQFP-44_10x10mm_P0.8mm" H 4000 3500 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-7766-8-bit-AVR-ATmega16U4-32U4_Datasheet.pdf" H 4000 3500 50  0001 C CNN
+	1    4000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR015
+U 1 1 60EFC6C2
+P 3050 3450
+F 0 "#PWR015" H 3050 3200 50  0001 C CNN
+F 1 "GND" H 3055 3277 50  0000 C CNN
+F 2 "" H 3050 3450 50  0001 C CNN
+F 3 "" H 3050 3450 50  0001 C CNN
+	1    3050 3450
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 3400 2600
+$Comp
+L power:GND #PWR019
+U 1 1 61018F9C
+P 3550 5350
+F 0 "#PWR019" H 3550 5100 50  0001 C CNN
+F 1 "GND" H 3555 5177 50  0000 C CNN
+F 2 "" H 3550 5350 50  0001 C CNN
+F 3 "" H 3550 5350 50  0001 C CNN
+	1    3550 5350
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 1600 4000 1700
+Wire Wire Line
+	4100 1600 4100 1700
+Wire Wire Line
+	4100 1600 4000 1600
+$Comp
+L Device:R_Small R2
+U 1 1 6190C82F
+P 4900 4100
+F 0 "R2" V 5096 4100 50  0000 C CNN
+F 1 "10K" V 5005 4100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 4830 4100 50  0001 C CNN
+F 3 "~" H 4900 4100 50  0001 C CNN
+	1    4900 4100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 61928F93
+P 5100 4150
+F 0 "#PWR016" H 5100 3900 50  0001 C CNN
+F 1 "GND" H 5105 3977 50  0000 C CNN
+F 2 "" H 5100 4150 50  0001 C CNN
+F 3 "" H 5100 4150 50  0001 C CNN
+	1    5100 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR011
+U 1 1 60C21AA5
+P 3900 1600
+F 0 "#PWR011" H 3900 1450 50  0001 C CNN
+F 1 "VBUS" H 3915 1773 50  0000 C CNN
+F 2 "" H 3900 1600 50  0001 C CNN
+F 3 "" H 3900 1600 50  0001 C CNN
+	1    3900 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VBUS #PWR013
+U 1 1 60D08D6D
+P 3200 2750
+F 0 "#PWR013" H 3200 2600 50  0001 C CNN
+F 1 "VBUS" H 3215 2923 50  0000 C CNN
+F 2 "" H 3200 2750 50  0001 C CNN
+F 3 "" H 3200 2750 50  0001 C CNN
+	1    3200 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 2750 3200 2800
+Wire Wire Line
+	3200 2800 3400 2800
+Wire Wire Line
+	3900 1600 3900 1700
+Wire Wire Line
+	3200 3300 3050 3300
+Wire Wire Line
+	3050 3300 3050 3450
+Wire Wire Line
+	5000 4100 5100 4100
+Wire Wire Line
+	5100 4100 5100 4150
+$Comp
+L Device:C_Small C8
+U 1 1 60F325CD
+P 3300 3300
+F 0 "C8" V 3163 3300 50  0000 C CNN
+F 1 "1uF" V 3072 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3300 3300 50  0001 C CNN
+F 3 "~" H 3300 3300 50  0001 C CNN
+	1    3300 3300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 4100 1600
+$Comp
+L power:VCC #PWR012
+U 1 1 60E851E0
+P 4100 1600
+F 0 "#PWR012" H 4100 1450 50  0001 C CNN
+F 1 "VCC" H 4115 1773 50  0000 C CNN
+F 2 "" H 4100 1600 50  0001 C CNN
+F 3 "" H 4100 1600 50  0001 C CNN
+	1    4100 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5300 3900 5300
+Wire Wire Line
+	3900 5300 3550 5300
+Wire Wire Line
+	3550 5300 3550 5350
+Connection ~ 3900 5300
+Wire Wire Line
+	4600 4100 4800 4100
+Text Label 4600 3300 0    50   ~ 0
+SDA
+Text Label 4600 2100 0    50   ~ 0
+SCK
+Text Label 4600 2200 0    50   ~ 0
+MOSI
+Text Label 4600 2300 0    50   ~ 0
+MISO
+Wire Wire Line
+	6100 3050 6600 3050
+Wire Wire Line
+	6100 2950 6600 2950
+Wire Wire Line
+	6100 2750 6600 2750
+Wire Wire Line
+	6100 2650 6600 2650
+Wire Wire Line
+	6100 2450 6600 2450
+Wire Wire Line
+	6100 2350 6600 2350
+Wire Wire Line
+	6100 2150 6600 2150
+Wire Wire Line
+	6100 1950 6600 1950
+Wire Wire Line
+	6100 1850 6600 1850
+Wire Wire Line
+	6100 1750 6600 1750
+Text Label 3400 2000 2    50   ~ 0
+RESET
+Text Label 3400 2200 2    50   ~ 0
+XTAL1
+Text Label 3400 2400 2    50   ~ 0
+XTAL2
+Text Label 3400 3000 2    50   ~ 0
+D+
+Text Label 3400 3100 2    50   ~ 0
+D-
+Text Label 6100 1750 0    50   ~ 0
+SCK
+Text Label 6100 1850 0    50   ~ 0
+MOSI
+Text Label 6100 1950 0    50   ~ 0
+MISO
+Text Label 6100 2150 0    50   ~ 0
+RESET
+Text Label 6100 2350 0    50   ~ 0
+SCL
+Text Label 6100 2450 0    50   ~ 0
+SDA
+Text Label 6100 2650 0    50   ~ 0
+XTAL1
+Text Label 6100 2750 0    50   ~ 0
+XTAL2
+Text Label 6100 2950 0    50   ~ 0
+D+
+Text Label 6100 3050 0    50   ~ 0
+D-
+NoConn ~ 4600 2700
+NoConn ~ 4600 2900
+NoConn ~ 4600 3000
+NoConn ~ 4600 3600
+NoConn ~ 4600 3800
+Text Label 4600 4200 0    50   ~ 0
+COL4
+Text Label 4600 4500 0    50   ~ 0
+LED_CKI
+Text Label 4600 4400 0    50   ~ 0
+LED_SDI
+Text Label 4600 3200 0    50   ~ 0
+SCL
+Text Label 4600 2600 0    50   ~ 0
+ROW4
+Text Label 4600 4800 0    50   ~ 0
+COL5
+Text Label 4600 4700 0    50   ~ 0
+COL6
+Text Label 4600 4600 0    50   ~ 0
+COL7
+Text Label 4600 3700 0    50   ~ 0
+ROW1
+Text Label 4600 3500 0    50   ~ 0
+ROW2
+Text Label 4600 3400 0    50   ~ 0
+ROW3
+Text Label 4600 2500 0    50   ~ 0
+COL1
+Text Label 4600 2400 0    50   ~ 0
+COL2
+Text Label 4600 3900 0    50   ~ 0
+COL3
+$EndSCHEMATC
