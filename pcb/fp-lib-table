@@ -1,4 +1,4 @@
 (fp_lib_table
-  (lib (name Local)(type KiCad)(uri ${KIPRJMOD}/sigmar-keyboard.pretty)(options "")(descr ""))
-  (lib (name Type-C)(type KiCad)(uri ${KIPRJMOD}/Type-C.pretty)(options "")(descr ""))
+  (lib (name Sigmar)(type KiCad)(uri ${KIPRJMOD}/lib)(options "")(descr ""))
+  (lib (name Keebio-Parts)(type KiCad)(uri ${KIPRJMOD}/Keebio-Parts.pretty)(options "")(descr ""))
 )

@@ -1,4 +1,3 @@
 (sym_lib_table
-  (lib (name Local)(type Legacy)(uri ${KIPRJMOD}/sigmar-keyboard.pretty/Local.lib)(options "")(descr ""))
-  (lib (name Type-C)(type Legacy)(uri ${KIPRJMOD}/Type-C.pretty/Type-C.lib)(options "")(descr ""))
+  (lib (name Sigmar)(type Legacy)(uri ${KIPRJMOD}/lib/sigmar.lib)(options "")(descr ""))
 )
