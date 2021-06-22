@@ -10,12 +10,17 @@ else
 endif
 
 DOCKER_IMG := sigmar-firmware
-RUN := docker run --rm -v $(CWD)definition:/root/qmk_firmware/keyboards/sigmar -v $(CWD)build:/root/workspace $(DOCKER_IMG) 
+RUN := docker run --rm -v $(CWD)definition:/root/qmk_firmware/keyboards/sigmar -v $(CWD)build:/root/workspace $(DOCKER_IMG)
 
-PORT := /dev/tty.usbmodem8076901
+SRCS := definition/keymaps/default/keymap.c \
+	definition/config.h \
+	definition/sigmar.h \
+	definition/sigmar.c \
+	definition/rules.mk
+TARGET := sigmar_default
 
-all: build/sigmar_default_production.hex
-.PHONY: all clean docker
+all: build/$(TARGET).hex
+.PHONY: all build clean docker repl flash
 .SECONDARY:
 
 clean:
@@ -24,9 +29,24 @@ clean:
 docker: Dockerfile
 	docker build -t $(DOCKER_IMG) .
 
-build/sigmar_default_production.hex:
+build/$(TARGET).hex: $(SRCS)
 	$(call MKDIRP,build)
-	$(RUN) bash -c 'make sigmar:default:production && cp sigmar_default_production.hex /root/workspace'
+	$(RUN) bash -c 'make sigmar:default && cp $(TARGET).hex /root/workspace'
 
-flash: build/sigmar_default_production.hex
-	avrdude -p atmega32u4 -c arduino -P $(PORT) -v -U flash:w:build/sigmar_default_production.hex
+build/eeprom-lefthand.eep build/eeprom-righthand.eep:
+	$(call MKDIRP,build)
+	$(RUN) bash -c 'cp /root/qmk_firmware/quantum/split_common/*.eep /root/workspace'
+
+flash-left: build/$(TARGET).hex build/eeprom-lefthand.eep
+	dfu-programmer atmega32u4 erase
+	dfu-programmer atmega32u4 flash --eeprom build/eeprom-lefthand.eep
+	dfu-programmer atmega32u4 erase
+	dfu-programmer atmega32u4 flash build/$(TARGET).hex
+	dfu-programmer atmega32u4 reset
+
+flash-right: build/$(TARGET).hex build/eeprom-righthand.eep
+	dfu-programmer atmega32u4 erase
+	dfu-programmer atmega32u4 flash --eeprom build/eeprom-righthand.eep
+	dfu-programmer atmega32u4 erase
+	dfu-programmer atmega32u4 flash build/$(TARGET).hex
+	dfu-programmer atmega32u4 reset
