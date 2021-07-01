@@ -182,6 +182,7 @@
 #define UNICODE_SELECTED_MODES UC_MAC, UC_WIN
 
 // https://beta.docs.qmk.fm/using-qmk/software-features/tap_hold
+#define PERMISSIVE_HOLD
 #define TAPPING_FORCE_HOLD
 
 // https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing#qmk-dfu
