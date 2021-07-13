@@ -10,123 +10,120 @@ stroke-width:0.165047;
 }
 .s0 {
 stroke:#000000;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s1 {
 stroke:#000000;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s2 {
 stroke:#19b219;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s3 {
 stroke:#7f4c00;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s4 {
 stroke:#00cc00;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s5 {
 stroke:#000000;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s6 {
 stroke:#ff19ff;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s7 {
 stroke:#ff0000;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s8 {
 stroke:#ffff00;
-stroke-width:0.104857;
+stroke-width:0.134276;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .s9 {
 stroke:#001919;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .sa {
 stroke:#006666;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .sb {
 stroke:#00ffff;
-stroke-width:0.209715;
+stroke-width:0.268551;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .sc {
 stroke:#ff0000;
-stroke-width:0.559239;
+stroke-width:0.716137;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .sd {
 stroke:#191919;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .se {
 stroke:#000000;
-stroke-width:0.069905;
+stroke-width:0.089517;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 .sf {
 stroke:#000000;
-stroke-width:0.209715;
+stroke-width:0.268551;
 stroke-linecap:round;
 stroke-linejoin:round;
 fill:none;
 }
 ]]></style>
 <path d='M20.525 115.115 C58.625,115.115 58.625,109.400 87.200,109.400 A66.350,66.350 0 0,1 120.375,118.289 L131.222,124.552 A3.000,3.000 0 0,0 135.320,123.454 L153.965,91.160 A15.525,15.525 0 0,0 151.272,72.199 A3.000,3.000 0 0,1 150.350,70.035 L150.350,26.057 A3.000,3.000 0 0,0 148.207,23.182 C87.200,5.000 49.100,8.112 6.822,26.156 A3.000,3.000 0 0,0 5.000,28.915 L5.000,93.065 A3.000,3.000 0 0,0 8.000,96.065 L11.525,96.065 A3.000,3.000 0 0,1 14.525,99.065 L14.525,112.115 A3.000,3.000 0 0,0 17.525,115.115 L20.525,115.115 ' class='s3' />
-<path d='M31.150 47.202 A1.100,1.100 0 0,1 30.050,48.302 A1.100,1.100 0 0,1 28.950,47.202 A1.100,1.100 0 0,1 30.050,46.102 A1.100,1.100 0 0,1 31.150,47.202 ' class='s3' />
-<path d='M31.150 85.302 A1.100,1.100 0 0,1 30.050,86.403 A1.100,1.100 0 0,1 28.950,85.302 A1.100,1.100 0 0,1 30.050,84.202 A1.100,1.100 0 0,1 31.150,85.302 ' class='s3' />
-<path d='M78.775 93.875 A1.100,1.100 0 0,1 77.675,94.975 A1.100,1.100 0 0,1 76.575,93.875 A1.100,1.100 0 0,1 77.675,92.775 A1.100,1.100 0 0,1 78.775,93.875 ' class='s3' />
-<path d='M126.400 85.302 A1.100,1.100 0 0,1 125.300,86.403 A1.100,1.100 0 0,1 124.200,85.302 A1.100,1.100 0 0,1 125.300,84.202 A1.100,1.100 0 0,1 126.400,85.302 ' class='s3' />
-<path d='M126.400 47.202 A1.100,1.100 0 0,1 125.300,48.302 A1.100,1.100 0 0,1 124.200,47.202 A1.100,1.100 0 0,1 125.300,46.102 A1.100,1.100 0 0,1 126.400,47.202 ' class='s3' />
+<path d='M54.963 82.445 A1.100,1.100 0 0,1 53.862,83.545 A1.100,1.100 0 0,1 52.763,82.445 A1.100,1.100 0 0,1 53.862,81.345 A1.100,1.100 0 0,1 54.963,82.445 ' class='s3' />
+<path d='M104.016 81.016 A1.100,1.100 0 0,1 102.916,82.116 A1.100,1.100 0 0,1 101.816,81.016 A1.100,1.100 0 0,1 102.916,79.916 A1.100,1.100 0 0,1 104.016,81.016 ' class='s3' />
 <path d='M59.675 15.257 A1.700,1.700 0 0,1 57.975,16.957 A1.700,1.700 0 0,1 56.275,15.257 A1.700,1.700 0 0,1 57.975,13.557 A1.700,1.700 0 0,1 59.675,15.257 ' class='s3' />
 <path d='M118.125 18.420 A1.700,1.700 0 0,1 116.425,20.120 A1.700,1.700 0 0,1 114.725,18.420 A1.700,1.700 0 0,1 116.425,16.720 A1.700,1.700 0 0,1 118.125,18.420 ' class='s3' />
 <path d='M148.850 26.207 A1.700,1.700 0 0,1 147.150,27.907 A1.700,1.700 0 0,1 145.450,26.207 A1.700,1.700 0 0,1 147.150,24.507 A1.700,1.700 0 0,1 148.850,26.207 ' class='s3' />
@@ -142,7 +139,7 @@ fill:none;
 <path d='M70.675 32.295 L70.675,18.295 L84.675,18.295 L84.675,32.295 L70.675,32.295 ' class='s3' />
 <path d='M89.725 75.157 L89.725,61.157 L103.725,61.157 L103.725,75.157 L89.725,75.157 ' class='s3' />
 <path d='M89.725 56.107 L89.725,42.107 L103.725,42.107 L103.725,56.107 L89.725,56.107 ' class='s3' />
-<path d='M89.725 37.057 L89.725,23.057 L103.725,23.057 L103.725,37.057 L89.725,37.057 ' class='s3' />
+<path d='M89.725 37.057 L89.725,23.058 L103.725,23.058 L103.725,37.057 L89.725,37.057 ' class='s3' />
 <path d='M108.775 79.920 L108.775,65.920 L122.775,65.920 L122.775,79.920 L108.775,79.920 ' class='s3' />
 <path d='M108.775 60.870 L108.775,46.870 L122.775,46.870 L122.775,60.870 L108.775,60.870 ' class='s3' />
 <path d='M108.775 41.820 L108.775,27.820 L122.775,27.820 L122.775,41.820 L108.775,41.820 ' class='s3' />
