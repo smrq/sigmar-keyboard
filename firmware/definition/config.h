@@ -178,13 +178,6 @@
 #define ENCODERS_PAD_A { D2 }
 #define ENCODERS_PAD_B { F4 }
 
-// https://beta.docs.qmk.fm/using-qmk/software-features/feature_unicode
-#define UNICODE_SELECTED_MODES UC_MAC, UC_WIN
-
 // https://beta.docs.qmk.fm/using-qmk/software-features/tap_hold
 #define PERMISSIVE_HOLD
 #define TAPPING_FORCE_HOLD
-
-// https://beta.docs.qmk.fm/using-qmk/guides/flashing/flashing#qmk-dfu
-#define QMK_ESC_OUTPUT F5 // COL 0
-#define QMK_ESC_INPUT D4  // ROW 0
