@@ -2,7 +2,10 @@
 
 40% split keyboard design
 
+![IMG_20210816_154000](https://user-images.githubusercontent.com/400889/169670596-53c1943d-756b-4e36-a27f-d207f274645e.jpg)
+
 ## Firmware
+
 
 Prerequisites:
 
