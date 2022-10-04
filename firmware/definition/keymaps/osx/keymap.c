@@ -74,34 +74,14 @@ _______,  _______,  _______,  XXXXXXX,  XXXXXXX,  _______,                      
     ),
     [_EXTRA] = LAYOUT(
 _______,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  RGB_HUI,                      XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_PAUS,  XXXXXXX,
-CC_KILL,  XXXXXXX,  CC_DSKL,  XXXXXXX,  CC_DSKR,  XXXXXXX,  RGB_MOD,  RGB_TOG,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
+CC_KILL,  KC_PSCR,  CC_DSKL,  XXXXXXX,  CC_DSKR,  XXXXXXX,  RGB_MOD,  RGB_TOG,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
 XXXXXXX,  XXXXXXX,  XXXXXXX,  CC_SNIP,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,
 _______,  _______,  _______,  XXXXXXX,  XXXXXXX,  _______,                      KC_INS,   XXXXXXX,  KC_CAPS,  XXXXXXX,  KC_SLCK,  KC_NLCK
     )
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    uint8_t mods = get_mods();
-
     switch (keycode) {
-        case KC_SPC: {
-            static bool registered;
-            if (record->event.pressed) {
-                if (mods & MOD_MASK_SHIFT) {
-                    // Send underscore (shift + minus)
-                    register_code(KC_MINS);
-                    registered = true;
-                    return false;
-                }
-            } else {
-                if (registered) {
-                    unregister_code(KC_MINS);
-                    registered = false;
-                    return false;
-                }
-            }
-            break;
-        }
         case _CUSTOM_ARROW:
             if (record->event.pressed) {
                 SEND_STRING("=>");

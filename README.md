@@ -4,30 +4,52 @@
 
 ![IMG_20210816_154000](https://user-images.githubusercontent.com/400889/169670596-53c1943d-756b-4e36-a27f-d207f274645e.jpg)
 
-## Firmware
+## PCB
 
+The design for the PCB was done in KiCad. The PCB is designed according to the specifications of manufacturing with [JLCPCB](https://jlcpcb.com/).
+
+
+## Firmware
 
 Prerequisites:
 
-* Install Docker
-* Run `make docker` to build the Docker image
+* Podman
+* dfu-programmer
 
 Building:
 
+* `make docker` to build the container image
 * `make` to build the bootloader and firmware hex files
 
-Flashing the firmware + bootloader:
+Flashing:
 
-I had to do it this way because the Teensy 2.0 I used had its bootloader overwritten from a previous project.
+* `make flash left` or `make flash right`
 
-* Install [avrdude](https://www.nongnu.org/avrdude/) and make sure it is in your PATH
-* Get a Teensy or something running Arduino ISP to serve as a programmer
-* Connect the four data lines between the programmer and the target microcontroller
-	* Note to self: I did this with a Teensy 2.0 as the target and a spare Teensy 3.1 as the programmer.
-	* This works with the stock pin settings for Arduino ISP
-	* The data lines to connect are: (programmer -> target)
-		* MOSI Pin 11 -> MOSI Pin 2
-		* MISO Pin 12 -> MISO Pin 3
-		* SCK Pin 13 -> SCK Pin 1
-		* Pin 10 -> RESET
-* `make flash` to flash the bootloader and firmware.
+### Building and flashing in WSL
+
+* Install Ubuntu >= 22.04
+* Install usbipd-win
+* `sudo apt install dfu-programmer podman`
+
+Flashing:
+
+* In Powershell
+	- `usbipd list`
+		- Find the entry that corresponds with the keyboard (when in keyboard mode, VID/PID is f055:5164)
+	- Press the reset button to switch to flashing mode
+		- You will need another keyboard or the on-screen virtual keyboard from now on! If the latter, it might help to type the following commands beforehand, so you only need to press enter.
+	- `usbipd wsl attach --busid=#-##`
+
+* In WSL
+	- `make flash-left` or `make flash-right`
+
+### Flashing the bootloader with Arduino ISP
+
+* Connect Arduino ISP
+	* MOSI Pin 11 (programmer) -> B2 (target)
+	* MISO Pin 12 -> B3
+	* SCK Pin 13 -> B1
+	* RST Pin 10 -> RST
+* `make build/sigmar_[osx|windows]_bootloader.hex`
+* `avrdude -p atmega32u4 -F -P COM4 -c stk500v1 -b 19200 -U flash:w:build/sigmar_[osx|windows]_bootloader.hex`
+	* `-P COM4` should match the serial port for the Arduino ISP

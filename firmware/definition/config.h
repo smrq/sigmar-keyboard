@@ -2,7 +2,7 @@
 
 #include "config_common.h"
 
-// https://beta.docs.qmk.fm/developing-qmk/qmk-reference/config_options#hardware-options
+// https://docs.qmk.fm/#/config_options?id=hardware-options
 #define VENDOR_ID    0xF055
 #define PRODUCT_ID   0x5164
 #define DEVICE_VER   0x0002
@@ -13,18 +13,13 @@
 #define MATRIX_COLS 7
 #define MATRIX_ROW_PINS { D4, D7, E6, B4 }
 #define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6 }
-#define UNUSED_PINS
 #define DIODE_DIRECTION COL2ROW
 
 #define DEBOUNCE 5
 #define LOCKING_SUPPORT_ENABLE
 #define LOCKING_RESYNC_ENABLE
 
-// https://beta.docs.qmk.fm/developing-qmk/qmk-reference/config_options#features-that-can-be-disabled
-#define NO_ACTION_MACRO
-#define NO_ACTION_FUNCTION
-
-// https://beta.docs.qmk.fm/using-qmk/hardware-features/lighting/feature_rgb_matrix
+// https://docs.qmk.fm/#/feature_rgb_matrix?id=rgb-matrix-lighting
 
 #ifdef RGB_MATRIX_ENABLE
 	#define RGB_DI_PIN D3
@@ -77,7 +72,7 @@
 	// #define DISABLE_RGB_MATRIX_SOLID_MULTISPLASH
 #endif
 
-// https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_audio
+// https://docs.qmk.fm/#/feature_audio?id=audio
 #ifdef AUDIO_ENABLE
 	#define SND_ONE_UP_SOUND \
 	    Q__NOTE(_E6),    \
@@ -166,7 +161,7 @@
 	#define NO_MUSIC_MODE
 #endif
 
-// https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_split_keyboard
+// https://docs.qmk.fm/#/feature_split_keyboard?id=split-keyboard
 #define EE_HANDS
 // #define USE_I2C
 #define USE_SERIAL
@@ -174,10 +169,10 @@
 #define SPLIT_TRANSPORT_MIRROR
 #define SPLIT_USB_DETECT
 
-// https://beta.docs.qmk.fm/using-qmk/hardware-features/feature_encoders
+// https://docs.qmk.fm/#/feature_encoders?id=encoders
 #define ENCODERS_PAD_A { D2 }
 #define ENCODERS_PAD_B { F4 }
 
-// https://beta.docs.qmk.fm/using-qmk/software-features/tap_hold
+// https://docs.qmk.fm/#/tap_hold?id=tap-hold-configuration-options
 #define PERMISSIVE_HOLD
 #define TAPPING_FORCE_HOLD
